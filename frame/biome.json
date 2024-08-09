@@ -1,0 +1,119 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 80,
+		"attributePosition": "auto",
+		"ignore": [
+			"node_modules/*",
+			"dist/*",
+			"drizzle/*",
+			".work/*",
+			".next/*",
+			".vscode/*",
+			"**/next.config.mjs"
+		]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": false,
+			"a11y": {
+				"all": true,
+				"noSvgWithoutTitle": "off",
+				"useKeyWithClickEvents": "off"
+			},
+			"complexity": {
+				"all": true,
+				"noBannedTypes": "error",
+				"noUselessThisAlias": "error",
+				"noUselessTypeConstraint": "error",
+				"useLiteralKeys": "error",
+				"useOptionalChain": "error",
+				"noExcessiveCognitiveComplexity": "off"
+			},
+			"correctness": {
+				"all": true,
+				"noPrecisionLoss": "error",
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "off",
+				"noConstantCondition": "error",
+				"noEmptyPattern": "error",
+				"noSwitchDeclarations": "error",
+				"noUnreachable": "error",
+				"noUnsafeOptionalChaining": "error",
+				"useExhaustiveDependencies": "off",
+				"useJsxKeyInIterable": "off"
+			},
+			"performance": {
+				"all": true,
+				"noBarrelFile": "off"
+			},
+			"security": {
+				"all": true
+			},
+			"style": {
+				"all": true,
+				"noDefaultExport": "off",
+				"noInferrableTypes": "error",
+				"noNamespace": "error",
+				"noNegationElse": "off",
+				"noNonNullAssertion": "off",
+				"useAsConstAssertion": "error",
+				"useBlockStatements": "off",
+				"useCollapsedElseIf": "off",
+				"useConsistentArrayType": "off",
+				"useForOf": "error",
+				"useImportType": "warn",
+				"useNamingConvention": "off",
+				"useShorthandFunctionType": "error",
+				"useTemplate": "off"
+			},
+			"suspicious": {
+				"all": false,
+				"noEmptyBlockStatements": "error",
+				"noEmptyInterface": "warn",
+				"noExplicitAny": "error",
+				"noExtraNonNullAssertion": "error",
+				"noMisleadingInstantiator": "error",
+				"noUnsafeDeclarationMerging": "error",
+				"useAwait": "off",
+				"useNamespaceKeyword": "error"
+			}
+		},
+		"ignore": [
+			"node_modules/*",
+			"dist/*",
+			"drizzle/*",
+			".work/*",
+			".next/*",
+			".vscode/*",
+			"**/next.config.mjs"
+		]
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"semicolons": "asNeeded",
+			"arrowParentheses": "always",
+			"bracketSpacing": true,
+			"bracketSameLine": false,
+			"quoteStyle": "single",
+			"attributePosition": "auto"
+		},
+		"globals": [
+			"it",
+			"describe",
+			"expect",
+			"test"
+		]
+	}
+}
